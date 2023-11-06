@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <style>
+    body {
+    margin: 90px;
+    background-color: beige;
+  }
+  
+  .header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  img {
+    margin-top: 10px;
+    width: 30%;
+  }
+  
+  .formulir {
+    margin-top: 30px;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .child {
+    font-size: 2rem;
+    position: inherit;
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  span {
+    margin: 50%;
+    justify-content: center;
+  }
+  
+  .kop {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .kop1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .bagan1 {
+    font-size: 2rem;
+    background-color: green;
+    color: aliceblue;
+  }
+  
+  .question {
+    margin-top: 10px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .radio-ques {
+    margin-top: 30px;
+    margin-left: 5%;
+    font-size: 2rem;
+    position: inherit;
+    display: block;
+    justify-content: end;
+    font-weight: bold;
+  }
+  
+  .kpj {
+    margin-top: 0;
+    margin-right: 5%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  .kuj {
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+  
+  .kpi {
+    font-size: 2rem;
+    margin-right: 5%;
+  }
+  
+  .kotak {
+    margin-top: 35px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+  }
+  
+  .kpj_1 {
+    font-size: 1rem;
+    margin-right: 6%;
+    display: flex;
+  }
+  
+  .kpi1 {
+    margin-left: 9%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .npp {
+    background-color: gray;
+    margin-left: 8.5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  label {
+    font-style: italic;
+    position: absolute;
+    display: flex;
+    font-size: 0.9rem;
+    margin: 0;
+    left: 75%;
+  }
+  
+  .perusahaan {
+    font-style: italic;
+    position: absolute;
+    display: flex;
+    font-size: 0.9rem;
+    margin: 0;
+    left: 4%;
+  }
+  
+  .kpp {
+    display: flex;
+    margin-right: 63%;
+  }
+  
+  .nama-perusahaan {
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  
+  .nape {
+    display: flex;
+    margin-right: 2%;
+  }
+  
+  .bio-data {
+    margin-top: 0;
+    margin-right: 5%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  
+  .ident {
+    position: absolute;
+    margin: 0;
+    left: 19.5%;
+    font-size: 2rem;
+    font-style: normal;
+  }
+  .ident1 {
+    position: absolute;
+    font-size: 2rem;
+    left: 35%;
+    margin-left: 10%;
+    display: flex;
+    font-style: normal;
+  }
+  .bio-data-kotak {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nama {
+    display: flex;
+    justify-content: center;
+    margin-left: 18%;
+    margin-right: 10%;
+  }
+  
+  .namax {
+    display: flex;
+    margin-left: 7.5%;
+    margin-right: 10%;
+  }
+  .nama1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    left: 50%;
+  }
+  .tgl {
+    position: absolute;
+    font-size: 2rem;
+    left: 35%;
+    margin-left: 10%;
+    top: 107%;
+    display: flex;
+  }
+  .bulan {
+    position: absolute;
+    font-size: 2rem;
+    left: 42.5%;
+    margin-left: 10%;
+    top: 107%;
+    display: flex;
+  }
+  .tahun {
+    position: absolute;
+    font-size: 2rem;
+    left: 50.5%;
+    margin-left: 10%;
+    top: 107%;
+    display: flex;
+  }
+  .nama2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    left: 60%;
+  }
+  .nama3 {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    left: 60%;
+  }
+  .pendidikan {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  
+  .pente {
+    position: absolute;
+    top: 97%;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  .jenjang {
+    display: flex;
+    position: absolute;
+    font-size: 2rem;
+    top: 90%;
+    left: 75%;
+  }
+  
+  .sd {
+    display: flex;
+  }
+  
+  .jk {
+    display: flex;
+    align-items: first baseline;
+    font-size: 2rem;
+  }
+  
+  .kelamin {
+    margin-left: 9%;
+    margin-right: 4%;
+  }
+  
+  .status {
+    margin-left: 1%;
+  }
+  
+  .gol {
+    display: flex;
+    justify-content: first baseline;
+    font-size: 2rem;
+  }
+  
+  .gd {
+    margin-top: 1.4%;
+    margin-left: 9%;
+    margin-right: 4%;
+  }
+  .gl {
+    margin-left: 8%;
+  }
+  
+  .kwn {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  
+  .khusus {
+    top: 123%;
+    left: 46%;
+  }
+  .ni {
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  
+  .nidi {
+    display: flex;
+    margin-left: 5%;
+  }
+  .berlaku {
+    margin-left: 19%;
+    margin-right: 1%;
+  }
+  
+  .tg {
+    position: absolute;
+    left: 59%;
+    top: 139%;
+  }
+  
+  .bl {
+    position: absolute;
+    left: 66%;
+    top: 139%;
+  }
+  .th {
+    position: absolute;
+    left: 74%;
+    top: 139%;
+  }
+  
+  .np {
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  
+  .npw {
+    margin-right: 7%;
+  }
+  .ibu {
+    margin-right: 1%;
+  }
+  .alt {
+    margin-right: 2%;
+  }
+  .np {
+    display: flex;
+    justify-content: first baseline;
+  }
+  .null {
+    position: absolute;
+    display: flex;
+    margin-left: 15.5%;
+  }
+  .nul {
+    position: absolute;
+    display: flex;
+    margin-left: 70%;
+  }
+  
+  .code {
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 7%;
+    left: 1%;
+  }
+  
+  .pos {
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 35%;
+    left: 2%;
+  }
+  
+  .alamat {
+    margin-top: 5%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  .alt-surat {
+    position: relative;
+    top: 110%;
+    margin-right: 10%;
+  }
+  
+  .kotak-surat {
+    position: absolute;
+    display: flex;
+    margin-left: 15.5%;
+  }
+  .kotak-surt {
+    position: absolute;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 15.5%;
+  }
+  
+  .nul1 {
+    display: flex;
+    margin-left: 16.5%;
+    margin-top: 5%;
+  }
+  
+  .nu1 {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .codee {
+    font-size: 1.5rem;
+    font-style: normal;
+    position: absolute;
+    margin-top: 3%;
+    left: 19%;
+  }
+  
+  .post {
+    font-size: 1.5rem;
+    font-style: normal;
+    position: absolute;
+    margin-top: 3%;
+    left: 73%;
+  }
+  
+  .tlp-rumah {
+    font-size: 2rem;
+    display: flex;
+    justify-content: first baseline;
+  }
+  
+  .tlp {
+    display: flex;
+    margin-left: 8%;
+  }
+  .tlpp {
+    display: flex;
+    margin-left: 2%;
+  }
+  .tlppp {
+    display: flex;
+    margin-left: 2%;
+  }
+  .ext {
+    margin-right: 5%;
+  }
+  .email {
+    display: flex;
+    font-size: 2rem;
+  }
+  .eml {
+    margin-right: 8%;
+  }
+  .surat {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    position: absolute;
+  }
+  .srt {
+    margin-left: 7%;
+    margin-right: 20%;
+  }
+  .bank {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .bank-1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    margin-right: 2%;
+  }
+  .banking {
+    display: flex;
+    position: absolute;
+    left: 15%;
+  }
+  
+  .cabang {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+  }
+  .cab {
+    display: flex;
+    display: flex;
+    position: absolute;
+    left: 15%;
+  }
+  
+  .kode-bank {
+    background-position: 20px;
+    position: absolute;
+    top: 265%;
+    left: 70%;
+    font-size: 2rem;
+  }
+  .bank-code {
+    display: flex;
+    position: absolute;
+  }
+  
+  .email1 {
+    font-size: 2rem;
+    display: flex;
+  }
+  .eml1 {
+    margin-right: 4%;
+  }
+  
+  .hidden {
+    border: 0;
+  }
+  
+  .center {
+    text-align: center;
+    height: 20%;
+  }
+  
+  .kotak-table {
+    position: absolute;
+    display: flex;
+    margin-top: 5%;
+    left: 65%;
+  }
+  
+  .a {
+    margin-left: 2%;
+  }
+  .b {
+    margin-left: 4%;
+  }
+  .c {
+    margin-left: 8%;
+  }
+  .d {
+    margin-left: 10%;
+  }
+  
+  .e {
+    margin-left: 14%;
+  }
+  .f {
+    margin-left: 16%;
+  }
+  .g {
+    margin-left: 18%;
+  }
+  .h {
+    margin-left: 20%;
+  }
+  .ab {
+    position: absolute;
+    font-size: 2rem;
+    font-style: normal;
+    top: 327%;
+    left: 67%;
+  }
+  
+  .cd {
+    position: absolute;
+    font-size: 2rem;
+    font-style: normal;
+    top: 327%;
+    left: 73%;
+  }
+  
+  .efgh {
+    position: absolute;
+    font-size: 2rem;
+    font-style: normal;
+    top: 327%;
+    left: 79%;
+  }
+  </style>
+  <body>
+    <div>
+      <div class="header">
+        <div class="logo">
+          <img src="./BPJS Ketenagakerjaan1.png" alt="" />
+        </div>
+        <table class="formulir">
+          <tr>
+            <td>formulir</td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="kop">PENDAFTARAN TENAGA KERJA DAN PEMBERITAHUAN PERUBAHAN</p>
+      <p class="kop1">IDENTITAS TENAGA KERJA DAN SUSUNAN KELUARGA</p>
+      <div class="child">
+        <input type="radio" />Pendaftar Baru <input type="radio" />Perubahan
+        Data
+      </div>
+      <div class="bagan1">BAGAN 1: IDENTITAS TENAGA KERJA</div>
+
+      <div class="question">
+        <p class="ques">
+          Apakah sebelumnya anda sudah menjadi peserta jamsostek / Bpjs
+          Ketenagakerjaan ?
+        </p>
+        <div class="radio-ques">
+          <input type="radio" class="rad1" />Pendaftar Baru
+          <input type="radio" class="rad2" />Perubahan Data
+        </div>
+      </div>
+
+      <div class="kpj">
+        <p class="kpi">Bila sudah, mohon :
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        </p>
+        <p class="kpi1">
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+        </p>
+        <div class="npp">
+        <label for="">(Diisi pihak BPJS Ketenagakerjaan)</label>
+        <br>
+        <p class="kpi1">NPP:
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          
+        </p>
+      </div>
+      </div>
+
+      <div class="kpj">
+        <p class="kpi">Bila sudah, mohon :
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        </p>
+        <p class="kpi1">
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+        </p>
+        <div class="npp">
+        <p class="kpi1">KPJ: 
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+          <div class="kotak"></div>
+        </p>
+      </div>
+    </div>
+
+    <div class="kpj_1">
+      <p class="kpi">Nama Perusahaan :
+        <label for="" class="perusahaan">(Sesuai perusahaan sekarang)</label>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      </p>
+    </div>
+
+    <div class="kpp">
+      <p class="kpi">Nomor Induk Karyawan :
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      </p>
+    </div>
+
+    <div class="kpj">
+      <p class="kpi">Bila sudah, mohon :
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      </p>
+      <p class="kuj">Kode Unit Kerja:
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      </p>
+      
+  </div>
+  
+
+  <div class="kpp">
+    <p class="kpi">Nama lengkap tenaga kerja :
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    </p>
+  </div>
+
+  </div>
+
+<div class="bio-data">
+  <label for="" class="ident">Nama Depan</label>
+  <div class="nama">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+
+  <div class="nama1">
+    <label for="" class="ident1">Nama Tengah</label>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+</div>
+</div>
+
+<div class="bio-data">
+  <p>Tempat/Tgl.Lahir :</p>
+  <label for="" class="ident">Nama Belakang</label>
+  <div class="namax">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    </div>
+    
+    <div class="nama1">
+      <label for="" class="ident1"></label>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <label for=""class="tgl">Tgl</label>
+  </div>
+    <div class="nama2">
+      <label for="" class="ident1">Gelar</label>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <label for=""class="bulan">Bulan</label>
+  </div>
+    <div class="nama3">
+      <label for="" class="ident1"></label>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <label for="" class="tahun">Tahun</label>
+      
+  </div>
+  <label for="" class="pente">Pendidikan Terakhir</label>
+  </div>
+  <div class="pendidikan">
+    <div class="jenjang">
+    <input type="radio" class="sd">SD
+    <input type="radio" class="sd">SMP
+    <input type="radio" class="sd">SMU
+    <input type="radio" class="sd">D3
+    <input type="radio" class="sd">S1
+    <input type="radio" class="sd">S2/S3
+  </div>
+ 
+  </div>
+
+  <div class="jk">
+    <p class="jenisk">Jenis Kelamin :</p>
+    <div class="kelamin">
+    <input type="radio">Laki-Laki
+    <input type="radio">Perempuan
+  </div>
+  
+    <p class="Statusper">Status Perkawinan :</p>
+    <div class="status">
+    <input type="radio">Belum Menikah 
+    <input type="radio">Menikah
+  </div>
+</div>
+
+<div class="gol">
+  <p class="golongan">Golongan darah:</p>
+  <div class="gd">
+    <input type="radio">O
+    <input type="radio">A
+    <input type="radio">B
+    <input type="radio">AB
+</div>
+<p class="kewar">Kewarganegaraan:</p>
+<div class="kwn">
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <label for="" class="khusus">Diisi khusus warga negara asing</label>
+</div>
+
+</div>
+
+<div class="gol">
+  <p class="golongan">Identitas Diri :</p>
+  <div class="gd">
+    <input type="radio">KTP
+    <input type="radio">Paspor
+    
+</div>
+</div>
+
+<div class="ni">
+  <p class="nid">Nomor Identitas Diri:
+    <div class="nidi">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  </p>
+  
+  
+  <div class="nama1">
+    <p class="berlaku">berlaku s/d
+    <label for="" class="ident1"></label>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <label for=""class="tg">Tgl</label>
+  </p>
+</div>
+  <div class="nama2">
+    <label for="" class="ident1"></label>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <label for=""class="bl">Bulan</label>
+</div>
+  <div class="nama3">
+    <label for="" class="ident1"></label>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <label for="" class="th">Tahun</label>
+    
+</div>
+</div>
+
+<div class="np">
+  <p class="npw">NPWP :
+    <div class="nidi">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  </p>
+  </div>
+<div class="np">
+  <p class="ibu">Nama ibu kandung:
+    <div class="nidi">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  </p>
+  </div>
+<div class="np">
+  <p class="alt">Alamat Lengkap :
+    <div class="nidi">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  </p>
+  </div>
+
+  <div class="np">
+      <div class="null">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+    </div>
+    </p>
+    </div>
+  <div class="np">
+      <div class="null">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+    </div>
+    </p>
+    </div>
+  <div class="np">
+      <div class="null">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <label for="" class="code">Kode</label>
+    </div>
+    <div class="nul">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <label for="" class="pos">Kode Post</label>
+    </div>
+    </div>
+
+    <div class="alamat">
+      <p class="alt-surat">Alamat Surat Manyurat:
+        <div class="kotak-surat">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      </div>
+      </p>
+    </div>
+
+    <div class="kotak-surat">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+    
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+    </div>
+    <div class="kotak-surat">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      </div>
+      
+      <div class="kotak-surt">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+      </div>
+
+      <div class="np">
+        <div class="nul1">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <label for="" class="codee">Kode</label>
+      </div>
+      <div class="nu1">
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <label for="" class="post">Kode Post</label>
+      </div>
+      </div>
+
+<div class="tlp-rumah">
+  <p>No.Tlp.Rumah:</p>
+  <div class="tlp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  <div class="tlpp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+</div>
+<div class="tlp-rumah">
+  <p>No.Tlp.Kantor:</p>
+  <div class="tlp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  <div class="tlpp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  <div class="tlppp">
+    <p class="ext">Ext</p>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+</div>
+<div class="tlp-rumah">
+  <p>No.Handphone:</p>
+  <div class="tlp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+  <div class="tlpp">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+</div>
+
+<div class="email">
+  <p class="eml">Alamat Email :</p>
+  <div class="kotak"></div>
+  
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+</div>
+
+<div class="jk">
+  <p class="jenisk">Surat Menyurat :</p>
+  <div class="srt">
+  <input type="radio">Alamat Surat Menyurat
+  <input type="radio">Alamat Email
+</div>
+</div>
+
+
+<p class="bank">Rekening Bank Yang Dimiliki:</p>
+<div class="bank-1">
+  <p class="rekening">Rekening Bank :</p>
+  <div class="banking">
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+</div>
+</div>
+
+<div class="cabang">
+  <p class="cbg">Cabang :</p>
+  <div class="cab">
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+</div>
+</div>
+<div class="cabang">
+  <p class="cbg">Nomor Rekening :</p>
+  <div class="cab">
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+</div>
+</div>
+
+<div class="kode-bank">
+  <p class="kb">Kode Bank:</p>
+  <div class="bank-code">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+</div>
+<div class="email1">
+  <p class="eml1">Alamat Email :</p>
+  <div class="kotak"></div>
+  
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+  <div class="kotak"></div>
+</div>
+
+<div class="bagan1">BAGAN 2: SUSUNAN KELUARGA</div>
+<table border="1" width="100%" height="200px">
+  <tr>
+      <td bgcolor="grey" class="center">Hubungan Keluarga</td>
+      <td bgcolor="grey"colspan="20" class="center">Nama Anggota Keluarga</td>
+      <td bgcolor="grey"colspan="8" class="center">Tgl Lahir</td>
+      <td bgcolor="grey"class="center">Jenis Kelamin</td>
+      <td bgcolor="grey"class="center">Golongan Darah</td>
+      <td bgcolor="grey"colspan="3" class="center">Keterangan</td>
+  </tr>
+
+  <tr>
+      <td class="center">Istri/Suami</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="hidden"></td>
+      <td class="hidden"><input type="radio" id="">Cerai</td>
+      <td class="hidden"><input type="radio" id="">Menikah</td>
+  </tr>
+
+  <tr>
+      <td class="center">Anak</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="hidden"><input type="radio" id="">Lahir</td>
+      <td class="hidden"><input type="radio" id="">Menikah</td>
+      <td class="hidden"><input type="radio" id="">Meninggal Dunia</td>
+  </tr>
+
+  <tr>
+      <td class="center">Anak</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="hidden"><input type="radio" id="">Lahir</td>
+      <td class="hidden"><input type="radio" id="">Menikah</td>
+      <td class="hidden"><input type="radio" id="">Meninggal Dunia</td>
+  </tr>
+
+  <tr>
+      <td class="center">Anak</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="hidden"><input type="radio" id="">Lahir</td>
+      <td class="hidden"><input type="radio" id="">Menikah</td>
+      <td class="hidden"><input type="radio" id="">Meninggal Dunia</td>
+  </tr>
+</table>
+
+<table border="1" width="100%" height="300px">
+  <tr>
+    <td class="center" valign="top">Cap Jempol Kiri</td>
+    <td class="center" valign="top">Tanda Tangan Kerja</td>
+    <td class="center" valign="top">Pas Foto 2x3</td>
+    <td class="center" valign="top">Diterima Oleh Bpjs Ketenagakerjaan
+      <input type=""class="kotak kotak-table a">
+      <input type=""class="kotak kotak-table b">
+      <label for="" class="ab">tgl</label>
+      <input type=""class="kotak kotak-table c">
+      <input type=""class="kotak kotak-table d">
+      <label for="" class="cd">bln</label>
+      <input type=""class="kotak kotak-table e">
+      <input type=""class="kotak kotak-table f">
+      <input type=""class="kotak kotak-table g">
+      <input type=""class="kotak kotak-table h">
+      <label for="" class="efgh">thn</label>
+    </td>
+
+  </tr>
+</table>
+
+<p style="font-size: 2rem; font-weight:bold; text-align:center">Keterangan : Seluruh Infromasi Wajib Diisi dengan silang atau centang pada isian lingkaran <input type="radio"></p>
+
+    </section>
+  </body>
+</html>
